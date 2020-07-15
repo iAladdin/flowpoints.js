@@ -179,11 +179,11 @@ export default class Flowspace extends Component {
           // Adding coloured arrow-marker definitions to list (if not already present)
           if (markerStart && !defs[connection.outputColor]) defs[connection.outputColor] = 
             <marker id={"arrow" + connection.outputColor} viewBox="0 0 50 50" markerWidth="5" markerHeight="5" refX="45" refY="24" orient="auto-start-reverse" markerUnits="strokeWidth">
-              <path d="M0,0 L50,20 v8 L0,48 L6,24 Z" fill={connection.outputColor} stroke-width='0' opacity='1' />
+              <path d="M0,0 L50,20 v8 L0,48 L6,24 Z" fill={connection.outputColor} strokeWidth='0' opacity='1' />
             </marker>
           if (markerEnd && !defs[connection.inputColor]) defs[connection.inputColor] = 
             <marker id={"arrow" + connection.inputColor} viewBox="0 0 50 50" markerWidth="5" markerHeight="5" refX="45" refY="24" orient="auto-start-reverse" markerUnits="strokeWidth">
-              <path d="M0,0 L50,20 v8 L0,48 L6,24 Z" fill={connection.inputColor} stroke-width='0' opacity='1' />
+              <path d="M0,0 L50,20 v8 L0,48 L6,24 Z" fill={connection.inputColor} strokeWidth='0' opacity='1' />
             </marker>
 
           // Calculating bezier offsets and adding new path to list
